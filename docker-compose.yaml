@@ -3,7 +3,7 @@ services:
     image: registry.srvr.site/bolt-ai:latest
     container_name: bolt
     env_file: 
-      - stack.env
+      - ./stack.env
     networks:
       srvr:
         ipv4_address: 10.10.10.23
