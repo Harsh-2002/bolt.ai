@@ -25,3 +25,8 @@ jobs:
     - name: Push Docker image
       run: |
         sudo docker push registry.srvr.site/bolt-ai:latest
+
+    - name: Trigger Portainer Webhook
+      run: |
+        curl -X POST https://portainer.srvr.site/api/stacks/webhooks/4a9e18b0-57c4-42fa-819b-7a7ecf7e9084
+  
