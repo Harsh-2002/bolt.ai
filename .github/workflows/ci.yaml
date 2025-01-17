@@ -18,6 +18,7 @@ jobs:
       run: |
         sudo docker build \
           --target bolt-ai-production \
+          --network host \
           -t registry.srvr.site/bolt-ai:latest \
           -f Dockerfile .
 
