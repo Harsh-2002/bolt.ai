@@ -18,7 +18,6 @@ jobs:
       run: |
         sudo docker build \
           --target bolt-ai-production \
-          --dns 8.8.8.8 --dns 8.8.4.4 \
           -t registry.srvr.site/bolt-ai:latest \
           -f Dockerfile .
 
