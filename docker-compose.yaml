@@ -1,11 +1,7 @@
 services:
-  app-prod:
-    image: bolt-ai:production
+  bolt:
+    image: registry.srvr.site/bolt-ai:latest
     container_name: bolt
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: bolt-ai-production
     env_file: 
       - stack.env
     networks:
